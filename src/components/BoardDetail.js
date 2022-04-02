@@ -68,7 +68,7 @@ const BoardDetail = (props) => {
 
     const onDeleteItem = () => {
         if (window.confirm("선택한 게시글을 삭제하시겠습니까?")) {
-            axios.get('http://localhost:8080/boardDelete/' + props.board.bNo)
+            axios.get('http://localhost:8080/boardDelete/' + bNo)
                 .then(
                     () => {
                         history('/');
